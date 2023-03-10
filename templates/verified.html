@@ -1,0 +1,44 @@
+<html>
+<head>
+   <title>Verified </title>
+</head>
+<body>
+   <h1 style="text-align:center;">You have been Verified!</h1>
+   <br/>
+   <div class="container">
+      <div class="column">
+         <div class="abc">
+         <img src="https://tse3.mm.bing.net/th?id=OIP.iF69bQxUNsT8EfFCuFZKkAHaIE&pid=Api&P=0" height="200" width="200">
+      </div>
+      <br><br>
+         <h1>Name:{{n}}</h1>
+         <h2>Phone no:{{p}}</h2>
+         <h4>Aadhar No:{{a}}</h4>
+   </div>
+      <div class="column">
+   <img src="https://cdn.shopify.com/s/files/1/0572/7299/1924/products/CBSE-English_-Science_-Social-Science-_-Math-Standard-Class-10-Sample-Question-Paper-_Set-of-4-Books_-for-2023-Board-Exam-_based-on-CBSE-Sample-Paper-released-on-16th-September_-Oswaa_85cd436e-db73-4b2d-9e0c-a05d60eed105_1024x1024.jpg?v=1664295566" alt="centered image"  height="1000" width="800">
+</div>
+<div class="column"> <div class="col">
+   <div style="justify-content: center;display: flex;margin-top:30px;"><img  src="{{ url_for('video')}}" height="200" width="250" ></div>
+</div></div>
+   </div>
+  <style>
+   .abc {
+text-align: left;
+   }
+   .column {
+	  flex: 33.33%;
+	  height: 200px;
+	  padding: 10px;
+	  margin: 5px;
+	  text-align: center;
+	}
+	.container {
+	   display: flex;
+	}
+   .col {
+      text-align: right;
+      
+   }
+   </style>
+</body>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AADHAR AUTHENTICATION</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/Style.css')}}">
+</head>
+<body>
+    <h2>AADHAR AUTHENTICATION</h2><br>
+    <style>
+        body{
+          background-image: url('https://img.freepik.com/free-photo/black-concrete-wall_24972-1046.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+    <div class="login">
+        <form method="POST" action="{{url_for('store')}}">
+        <label><b>Name</b></label>
+        <input type="text" name="Uname" id="Uname" placeholder="Name">
+        <br><br>
+        <label><b>Phone No</b></label>
+        <input type="text" name="phone" id="phone" placeholder="phone">
+        <br><br>
+        <label><b>Gender</b></label>
+        <select name ="gender" id = "gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br><br>
+        <label><b>Aadhar No</b></label>
+        <input type="text" name="Aadhar" id="Aadhar" placeholder="Aadhar No">
+        <br><br>
+        <input type="submit" name="sub" id="sub" value="submit">
+        <br><br>
+    </form>
+        
+    
+</div>
+</body>
+</html>
